@@ -10,6 +10,8 @@
                  [concurrent/concurrent "1.3.4"]
                  [net.sf.jung/jung-api "2.0.1"]
                  [net.sf.jung/jung-graph-impl "2.0.1"]
-                 [net.sf.jung/jung-algorithms "2.0.1"]]
+                 [net.sf.jung/jung-algorithms "2.0.1"]
+                 [net.sf.jung/jung-algorithms "2.0.1"]
+                 [net.sf.jung/jung-visualization "2.0.1"]]
   :dev-dependencies [[swank-clojure "1.2.1"]
                      [org.clojars.mmcgrana/lein-javac "1.2.1"]])
