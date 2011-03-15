@@ -56,7 +56,7 @@
      `(proxy [Factory] []
         (create [] (new ~klass)))))
   
-(defn make-erdos-reyini [size p]
+(defn make-erdos-reyini [p size]
   (let [generator
         (ErdosRenyiGenerator. (graph-factory)
                               (vertex-factory)
@@ -66,12 +66,12 @@
     (.create generator)))
 
   
-(defn erdos-table [p sizes]
+(defn print-table [graph-generator sizes]
   (println "+----------+------------+------------+------------+")
   (println "| size     |      C     |    APL     |     D      |")
   (println "+----------+------------+------------+------------+")
   (doseq [s sizes]
-    (let [g (make-erdos-reyini s p)]
+    (let [g (graph-generator s)]
       (println (format "| % 8d | % 10f | % 10f | % 10f |"
                      s (clustering-coefficient g)
                       (average-shortest-paths g)
