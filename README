@@ -1,13 +1,13 @@
 # graph-examples
 
-FIXME: write description
+Some graph/network explorations with Clojure and Jung.
 
 ## Usage
 
-FIXME: write
+Get the REPL in Emacs, (in-ns 'graph-example.core) and start hacking!
 
 ## License
 
-Copyright (C) 2010 FIXME
+Copyright (C) 2011 Enrico Franchi
 
-Distributed under the Eclipse Public License, the same as Clojure.
+Distributed under the MIT Public License.
